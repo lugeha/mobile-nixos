@@ -5,19 +5,19 @@
     ./sound.nix
   ];
 
-  mobile.device.name = "lenovo-wormdingler";
+  mobile.device.name = "lenovo-homestar";
   mobile.device.identity = {
     name = "Chromebook Duet 3 (11”)";
     manufacturer = "Lenovo";
   };
-  mobile.device.supportLevel = "supported";
+  mobile.device.supportLevel = "unsupported";
 
   mobile.hardware = {
     soc = "qualcomm-sc7180";
     ram = 1024 * 4; # Up to 8GiB
     screen = {
       # Panel is portrait CW compared to keyboard attachment.
-      width = 1200; height = 2000;
+      width = 1920; height = 1080;
     };
   };
 
