@@ -4,7 +4,7 @@
 }:
 
 # The minimum redistributable set of firmware files required for the device.
-runCommand "lenovo-wormdingler-firmware" {
+runCommand "lenovo-homestar-firmware" {
   src = firmwareLinuxNonfree;
   meta.license = firmwareLinuxNonfree.meta.license;
 } ''

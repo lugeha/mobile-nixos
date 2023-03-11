@@ -5,7 +5,7 @@
 , p7zip
 }:
 
-runCommand "lenovo-wormdingler-unredistributable-firmware" {
+runCommand "lenovo-homestar-unredistributable-firmware" {
   nativeBuildInputs = [
     p7zip
     util-linux

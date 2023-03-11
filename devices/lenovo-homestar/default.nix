@@ -7,7 +7,7 @@
 
   mobile.device.name = "lenovo-homestar";
   mobile.device.identity = {
-    name = "Chromebook Duet 3 (11”)";
+    name = "Chromebook Duet 5 (13.3”)";
     manufacturer = "Lenovo";
   };
   mobile.device.supportLevel = "unsupported";
@@ -67,6 +67,6 @@
   mobile.quirks.qualcomm.sc7180-modem.enable = true;
 
   nixpkgs.overlays = [(final: super: {
-    lenovo-wormdingler-unredistributable-firmware = final.callPackage ./firmware/non-redistributable.nix {};
+    lenovo-homestar-unredistributable-firmware = final.callPackage ./firmware/non-redistributable.nix {};
   })];
 }

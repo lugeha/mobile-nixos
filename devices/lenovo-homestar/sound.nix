@@ -25,11 +25,6 @@
             $out/share/alsa/ucm2/conf.d/sc7180-rt5682-max98357a-1mic/HiFi.conf
           install -Dm644 $src/sc7180-rt5682-max98357a-1mic/sc7180-rt5682-max98357a-1mic.conf \
             $out/share/alsa/ucm2/conf.d/sc7180-rt5682-max98357a-1mic/sc7180-rt5682-max98357a-1mic.conf
-
-          install -Dm644 $src/sc7180-rt5682s-max98357a-1mic/HiFi.conf \
-            $out/share/alsa/ucm2/conf.d/sc7180-rt5682s-max98357a-1mic/HiFi.conf
-          install -Dm644 $src/sc7180-rt5682s-max98357a-1mic/sc7180-rt5682s-max98357a-1mic.conf \
-            $out/share/alsa/ucm2/conf.d/sc7180-rt5682s-max98357a-1mic/sc7180-rt5682s-max98357a-1mic.conf
         ''
       ) {};
     })
