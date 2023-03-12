@@ -11,8 +11,8 @@ runCommand "lenovo-homestar-unredistributable-firmware" {
     util-linux
   ];
   src = fetchzip {
-    url = "https://dl.google.com/dl/edgedl/chromeos/recovery/chromeos_15117.112.0_strongbad_recovery_stable-channel_mp-v5.bin.zip";
-    sha256 = "sha256-D00YeAVrjlFtz/rkzZFCHRyZ8vNr0gYGkJ+l1FUG8OA=";
+    url = "https://dl.google.com/dl/edgedl/chromeos/recovery/chromeos_15278.72.0_strongbad_recovery_stable-channel_mp-v5.bin.zip";
+    sha256 = "sha256-LJmtQmlHcFhKmpUxm6bEpWmIS5OPtju2+zT9AmMEo8U=";
   };
   meta.license = [
     # We make no claims that it can be redistributed.
