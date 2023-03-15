@@ -35,6 +35,8 @@ module Configuration
           return "pine64-pinetab"
         when /^google,krane/
           return "lenovo-krane"
+        when /^google,homestar/
+          return "lenovo-homestar"
         when /^google,wormdingler/
           return "lenovo-wormdingler"
         when /^google,scarlet/
@@ -69,7 +71,7 @@ module Configuration
       case identifier
       when "pine64-pinephone", "pine64-pinetab", "pine64-pinephonepro"
         return "u-boot"
-      when "lenovo-krane", "lenovo-wormdingler", "asus-dumo"
+      when "lenovo-krane", "lenovo-homestar", "lenovo-wormdingler", "asus-dumo"
         return "depthcharge"
       end
 
@@ -98,7 +100,7 @@ module Configuration
         when "lenovo-krane"
           # MT8183 eMMC
           File.join("/dev/disk/by-path", "platform-11230000.mmc")
-        when "lenovo-wormdingler"
+        when "lenovo-wormdingler", "lenovo-homestar"
           # Qualcomm 7c eMMC
           File.join("/dev/disk/by-path", "platform-7c4000.mmc")
         end
