@@ -9,7 +9,7 @@ in
     hardware.socs.rockchip-op1.enable = mkOption {
       type = types.bool;
       default = false;
-      description = "enable when SOC is RK3399-OP1";
+      description = lib.mdDoc "enable when SOC is RK3399-OP1";
     };
     hardware.socs.rockchip-rk3399s.enable = mkOption {
       type = types.bool;

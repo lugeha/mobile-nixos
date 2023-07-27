@@ -12,7 +12,7 @@ in
       kernel = {
         structuredConfig = mkOption {
           type = with types; listOf (functionTo attrs);
-          description = ''
+          description = lib.mdDoc ''
             Functions returning kernel structured config.
 
             The functions take one argument, an attrset of helpers.
@@ -128,7 +128,8 @@ in
         NFT_NAT                     = whenAtLeast "3.13" yes;
         NFT_NUMGEN                  = whenAtLeast "4.9" yes;
         NFT_META                    = whenBetween "3.13" "4.17" yes;
-        NFT_OBJREF                  = whenAtLeast "4.10" yes;
+        # https://github.com/torvalds/linux/commit/d037abc2414b4539401e0e6aa278bedc4628ad69
+        NFT_OBJREF                  = whenBetween "4.10" "6.2" yes;
         NFT_OSF                     = whenAtLeast "4.19" yes;
         NFT_QUOTA                   = whenAtLeast "4.9" yes;
         NFT_REDIR                   = whenAtLeast "3.19" yes;
