@@ -5,10 +5,12 @@
   ./beautification.nix
   ./boot-control.nix
   ./boot-initrd.nix
+  ./boot.nix
   ./bootloader.nix
   ./cross-workarounds.nix
   ./devices-metadata.nix
   ./documentation.nix
+  ./hardware-eink.nix
   ./generated-filesystems.nix
   ./hardware-allwinner.nix
   ./hardware-exynos.nix
