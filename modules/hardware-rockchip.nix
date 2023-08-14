@@ -16,11 +16,6 @@ in
       default = false;
       description = "enable when SOC is RK3399S";
     };
-    hardware.socs.rockchip-rk3399s.enable = mkOption {
-      type = types.bool;
-      default = false;
-      description = "enable when SOC is RK3399S";
-    };
   };
 
   config = mkMerge [
